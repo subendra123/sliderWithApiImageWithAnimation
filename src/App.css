@@ -1,38 +1,63 @@
-.App {
+.image_style {
+  width: 100%;
+  height: 400px;
+}
+.image_style img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.slider_style {
+  width: 1200px;
+  height: 500px;
+  background-color: #ddd;
+  margin: 2rem 4rem;
+  border: 2px solid black;
+  padding: 5px;
+}
+.slider_style h1 {
   text-align: center;
+  padding: 10px;
+  animation: text-animation 8s infinite;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@keyframes text-animation {
+  0% {
+    margin-top: 0;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  10% {
+    margin-top: 0;
   }
-  to {
-    transform: rotate(360deg);
+  20% {
+    margin-top: -5.62rem;
+    color: red;
+  }
+  30% {
+    margin-top: -5.62rem;
+    color: blue;
+  }
+  40% {
+    margin-top: -11.24rem;
+    color: pink;
+  }
+  60% {
+    margin-top: -11.24rem;
+    color: aliceblue;
+  }
+  70% {
+    margin-top: -5.62rem;
+    color: black;
+  }
+  80% {
+    margin-top: -5.62rem;
+    color: aqua;
+  }
+  90% {
+    margin-top: 0;
+    color: white;
+  }
+  100% {
+    margin-top: 0;
+    color: yellow;
   }
 }
